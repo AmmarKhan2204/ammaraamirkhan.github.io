@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -7,82 +8,143 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Logo Navigation */
+.logo-nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.nav-logo {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-logo:hover {
+    transform: scale(1.1);
+}
+
 /* Hero Section */
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
     text-align: center;
     background: linear-gradient(135deg, #6C3483, #A569BD);
-    animation: fadeIn 2s ease-in-out;
 }
 
-.hero-content h1 {
-    font-size: 3rem;
-}
-
-.hero-content span {
-    color: #F8C471;
-}
-
-.hero-content p {
-    font-size: 1.5rem;
-}
-
-.btn {
-    display: inline-block;
-    padding: 12px 24px;
-    margin-top: 20px;
-    font-size: 1rem;
-    background-color: white;
-    color: #5B2C6F;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background-color: #F8C471;
-}
-
-/* Sections */
-section {
-    padding: 80px 10%;
+.profile-container {
     text-align: center;
 }
 
-h2 {
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+h1 {
     font-size: 2.5rem;
+    margin: 10px 0;
 }
 
-/* Projects Section */
-.projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.project-card {
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    margin: 15px;
-    border-radius: 8px;
-    width: 60%;
-    transition: 0.3s;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-}
-
-/* Contact Section */
-.contact p {
+p {
     font-size: 1.2rem;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+/* Section Styling */
+section {
+    padding: 60px 10%;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+/* Stanford Section */
+.stanford {
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.stanford-text {
+    width: 50%;
+    padding: 20px;
+}
+
+.stanford-images {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.stanford-images img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* UC Davis Section */
+.ucdavis {
+    background: linear-gradient(135deg, #8E44AD, #D2B4DE);
+    text-align: right;
+}
+
+.ucdavis-text {
+    width: 50%;
+    margin-left: auto;
+}
+
+.ucdavis-images {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ucdavis-images img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Buraq Section */
+.buraq {
+    background: white;
+    color: black;
+}
+
+.buraq-text {
+    width: 50%;
+    padding: 20px;
+}
+
+.buraq-media {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.buraq-media img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.buraq-media iframe {
+    width: 100%;
+    border-radius: 10px;
 }
