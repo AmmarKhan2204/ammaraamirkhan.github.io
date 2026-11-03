@@ -1,71 +1,254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ammar Aamir Khan | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ammar Aamir Khan | Clinical AI Fellow</title>
+  <meta name="description" content="Clinical AI Fellow at Boston Health AI in Houston. Ophthalmology research at Stanford. UC Davis graduate.">
+  <meta name="theme-color" content="#21124d">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ammar Aamir Khan">
+  <meta property="og:description" content="Clinical AI Fellow at Boston Health AI. Ophthalmology research at Stanford.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%235a35c0'/%3E%3Cpath d='M8 36h14l5-12 8 24 6-18 3 6h12' fill='none' stroke='%237ff0d8' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js"></script>
+  <script defer src="script.js"></script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-    <!-- Logo Navigation -->
-    <div class="logo-nav">
-        <a href="#stanford"><img src="images/stanford-logo.png" alt="Stanford" class="nav-logo"></a>
-        <a href="#ucdavis"><img src="images/ucdavis-logo.png" alt="UC Davis" class="nav-logo"></a>
-        <a href="#buraq"><img src="images/buraq-logo.png" alt="Buraq" class="nav-logo"></a>
+  <header class="nav" id="top">
+    <div class="nav__bar">
+      <a class="nav__brand" href="#top" aria-label="Ammar Aamir Khan, back to top">
+        <svg viewBox="0 0 48 24" width="34" height="17" aria-hidden="true"><path d="M1 13h10l4-9 6 18 5-13 3 4h18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Ammar Aamir Khan</span>
+      </a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <nav class="nav__links" id="nav-links" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#volunteering">Volunteering</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
+    <div class="nav__progress" aria-hidden="true"></div>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="profile-container">
-            <img src="profile.png" alt="Ammar Aamir Khan" class="profile-pic">
-            <h1>Ammar Aamir Khan</h1>
-            <p>Passionate Environmental Technology Student at UC Davis | Innovating in Medical Technology at Stanford</p>
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="name">
+      <div class="wrap hero__grid">
+        <div class="hero__text">
+          <h1 id="name" class="hero__name">
+            <span class="line"><span>Ammar</span></span>
+            <span class="line"><span>Aamir Khan</span></span>
+          </h1>
+          <p class="hero__lead">Clinical AI Fellow at Boston Health AI in Houston. Ophthalmology research at Stanford. UC Davis graduate.</p>
+          <div class="hero__cta">
+            <a class="btn btn--solid" href="#experience">See my experience</a>
+            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          </div>
         </div>
+
+        <figure class="portrait">
+          <div class="portrait__ring">
+            <img data-slot="profile" alt="Portrait of Ammar Aamir Khan" width="640" height="800" fetchpriority="high">
+          </div>
+        </figure>
+      </div>
+
+      <div class="wrap">
+        <div class="stats">
+          <div class="stat"><span class="stat__num"><span data-count="2">2</span>+</span><span class="stat__lbl">years in ophthalmology research</span></div>
+          <div class="stat"><span class="stat__num"><span data-count="1">1</span></span><span class="stat__lbl">manuscript accepted at ARVO</span></div>
+          <div class="stat"><span class="stat__num"><span data-count="6">6</span></span><span class="stat__lbl">years with Pakistan's top STEM camp</span></div>
+          <div class="stat"><span class="stat__num"><span data-count="40">40</span>%</span><span class="stat__lbl">growth in camp applications</span></div>
+        </div>
+      </div>
     </section>
 
-    <!-- Stanford Section -->
-    <section class="stanford" id="stanford">
-        <div class="stanford-text">
-            <h2>Work at Stanford</h2>
-            <p>Leading development on a research project for an app that remotely monitors visual acuity, gaining experience in coding, collecting data, and presenting research.</p>
-            <p>Collaborating with medical professionals to build real-world applications.</p>
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-h">
+      <div class="wrap split">
+        <h2 id="about-h" class="section__title">About</h2>
+        <div class="prose">
+          <p>I'm a Clinical AI Fellow at Boston Health AI in Houston, where I deploy an AI clinical scribe on-site and help improve the product on the backend. Being in the clinics and in the code means I see problems where they happen and fix them at the source.</p>
+          <p>My path into clinical technology started at Stanford, where I spent two years on ophthalmology research: app development, virtual reality software, image analysis, and database management, including an app that remotely monitors visual acuity. Most of what I know about building for clinical use, I learned there.</p>
+          <p>I'm a UC Davis graduate in Agricultural and Environmental Technology, with a minor in Technology Management.</p>
         </div>
-        <div class="stanford-images">
-            <img src="stanford1.jpg" alt="Stanford Project">
-            <img src="stanford2.jpg" alt="Research Work">
-        </div>
+      </div>
     </section>
 
-    <!-- UC Davis Section -->
-    <section class="ucdavis" id="ucdavis">
-        <div class="ucdavis-text">
-            <h2>Green Innovation Network @ UC Davis</h2>
-            <p>Event Coordinator for the largest AgTech club at the nation's leading agricultural institution.</p>
-            <p>Organizing meetings, workshops, and industry collaborations to drive real-world sustainability innovation.</p>
+    <!-- Experience -->
+    <section class="section" id="experience" aria-labelledby="exp-h">
+      <div class="wrap">
+        <h2 id="exp-h" class="section__title">Experience</h2>
+
+        <div class="timeline">
+          <svg class="spine" aria-hidden="true" focusable="false">
+            <path class="spine__base" pathLength="1"></path>
+            <path class="spine__trace" pathLength="1"></path>
+          </svg>
+
+          <article class="entry">
+            <div class="panel panel--lead spot">
+              <header class="entry__head">
+                <span class="mark" aria-hidden="true">BH</span>
+                <div>
+                  <h3>Clinical AI Fellow</h3>
+                  <p class="org">Boston Health AI</p>
+                  <p class="meta"><span>Oct 2026 – Present</span><span>Houston, TX</span></p>
+                </div>
+              </header>
+              <ul class="points">
+                <li>Deploying an AI clinical scribe on-site in clinics, working with clinicians and staff to fit it into their daily workflow and gather feedback.</li>
+                <li>Improving the product on the backend, turning issues from live clinical use into fixes and new features.</li>
+                <li>Building hands-on experience in clinical implementation, healthcare workflows, and iterating on a product in real care settings.</li>
+              </ul>
+              <figure class="wide reveal">
+                <img data-slot="boston1" alt="Clinical deployment in Houston" loading="lazy" width="1200" height="520">
+              </figure>
+            </div>
+          </article>
+
+          <article class="entry">
+            <div class="panel spot">
+              <header class="entry__head">
+                <img class="logo" src="images/stanford-logo.png" alt="" width="56" height="56">
+                <div>
+                  <h3>Developer</h3>
+                  <p class="org">Stanford University School of Medicine</p>
+                  <p class="meta"><span>Jun 2024 – Jun 2025</span><span>Stanford, CA (hybrid, part-time)</span></p>
+                </div>
+              </header>
+              <ul class="points">
+                <li>Led development on a research project for an app that remotely monitors visual acuity, covering coding, data collection, and presenting the research.</li>
+                <li>Worked with a team of clinicians, researchers, front- and back-end developers, and medical professors.</li>
+                <li>Manuscript accepted by ARVO (Association for Research in Vision and Ophthalmology).</li>
+              </ul>
+              <div class="gallery">
+                <figure class="shot reveal"><img data-slot="stanford1" alt="Stanford research project" loading="lazy" width="900" height="600"></figure>
+                <figure class="shot reveal"><img data-slot="stanford2" alt="Working with the research team" loading="lazy" width="600" height="400"></figure>
+                <figure class="shot reveal"><img data-slot="stanford3" alt="Presenting research" loading="lazy" width="600" height="400"></figure>
+              </div>
+            </div>
+          </article>
+
+          <article class="entry">
+            <div class="panel spot">
+              <header class="entry__head">
+                <span class="mark" aria-hidden="true">OI</span>
+                <div>
+                  <h3>Technical Consultant</h3>
+                  <p class="org">OIRRC</p>
+                  <p class="meta"><span>Jun 2023 – Jun 2024</span><span>California (hybrid, part-time)</span></p>
+                </div>
+              </header>
+              <ul class="points">
+                <li>Improved data collection and research efficiency across 200+ clinics.</li>
+                <li>Worked on app development, virtual reality software, image analysis, and database management for ophthalmology research projects.</li>
+              </ul>
+            </div>
+          </article>
         </div>
-        <div class="ucdavis-images">
-            <img src="ucdavis1.jpg" alt="UC Davis Event">
-            <img src="ucdavis2.jpg" alt="Workshop">
-        </div>
+      </div>
     </section>
 
-    <!-- Buraq Section -->
-    <section class="buraq" id="buraq">
-        <div class="buraq-text">
-            <h2>Volunteer Work - Buraq Planetary Society</h2>
-            <p>Managed a team for Pakistan’s top STEM camp, increasing applications by 40%.</p>
-            <p>Coordinated activities and ensured a lasting impact in student development.</p>
+    <!-- Skills -->
+    <section class="section" id="skills" aria-labelledby="skills-h">
+      <div class="wrap">
+        <h2 id="skills-h" class="section__title">Skills</h2>
+        <div class="skills">
+          <div class="skills__group">
+            <h3>Clinical AI</h3>
+            <ul class="chips"><li>Clinical implementation</li><li>AI scribe deployment</li><li>Healthcare workflows</li><li>Product feedback loops</li></ul>
+          </div>
+          <div class="skills__group">
+            <h3>Research and data</h3>
+            <ul class="chips"><li>Data collection</li><li>Image analysis</li><li>Database management</li><li>Presenting research</li></ul>
+          </div>
+          <div class="skills__group">
+            <h3>Development</h3>
+            <ul class="chips"><li>App development</li><li>Virtual reality (VR)</li><li>Backend product work</li></ul>
+          </div>
+          <div class="skills__group">
+            <h3>Leadership</h3>
+            <ul class="chips"><li>Project management</li><li>Team leadership</li><li>Team coordination</li><li>Student outreach</li></ul>
+          </div>
         </div>
-        <div class="buraq-media">
-            <img src="images/buraq1.jpg" alt="Buraq Event">
-            <img src="images/buraq2.jpg" alt="STEM Camp">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/3wzoA-VQiH4" frameborder="0" allowfullscreen></iframe>
-        </div>
+      </div>
     </section>
 
+    <!-- Education -->
+    <section class="section" id="education" aria-labelledby="edu-h">
+      <div class="wrap">
+        <h2 id="edu-h" class="section__title">Education</h2>
+        <div class="panel spot edu">
+          <img class="logo logo--lg" src="images/ucdavis-logo.png" alt="" width="72" height="72">
+          <div>
+            <h3>University of California, Davis</h3>
+            <p class="org">Agricultural and Environmental Technology</p>
+            <p class="meta"><span>Minor in Technology Management</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Volunteering -->
+    <section class="section" id="volunteering" aria-labelledby="vol-h">
+      <div class="wrap">
+        <h2 id="vol-h" class="section__title">Volunteering</h2>
+        <div class="panel spot buraq">
+          <div class="buraq__text">
+            <header class="entry__head">
+              <img class="logo" src="images/buraq-logo.png" alt="" width="56" height="56">
+              <div>
+                <h3>Project Lead</h3>
+                <p class="org">Buraq Planetary Society</p>
+                <p class="meta"><span>Dec 2018 – Dec 2024</span><span>Islamabad, Pakistan (seasonal)</span></p>
+              </div>
+            </header>
+            <ul class="points">
+              <li>Managed a team of alumni and staff to run Pakistan's top STEM camp, with a 40% increase in applications since.</li>
+              <li>Coordinated high-stress activities for 40 students, improving curriculum delivery and teamwork.</li>
+              <li>Helped keep the camp a leader in STEM education and student development, and returned as a lecturer for the 2024 camp.</li>
+            </ul>
+          </div>
+          <div class="buraq__media">
+            <figure class="shot shot--tall reveal"><img data-slot="buraqTall" alt="Lecturing at the Buraq STEM camp" loading="lazy" width="800" height="1000"></figure>
+            <figure class="shot shot--small reveal"><img data-slot="buraqWide" alt="Students at the Buraq STEM camp" loading="lazy" width="600" height="450"></figure>
+          </div>
+          <div class="video" id="buraq-video" hidden></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--last" id="contact" aria-labelledby="contact-h">
+      <div class="wrap">
+        <div class="contact">
+          <h2 id="contact-h" class="contact__title">Open to conversations on clinical AI and medical technology.</h2>
+          <div class="contact__links">
+            <a class="btn btn--solid" data-link="linkedin" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn--ghost" data-link="github" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn--ghost" data-link="email">Email</a>
+            <a class="btn btn--ghost" data-link="resume" target="_blank" rel="noopener">Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>&copy; <span id="year">2026</span> Ammar Aamir Khan</p>
+    </div>
+  </footer>
 </body>
 </html>
