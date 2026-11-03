@@ -16,6 +16,11 @@ window.SITE = {
     stanford2: { src: "images/stanford-2.jpg",    alt: "Working with the research team" },
     stanford3: { src: "images/stanford-3.jpg",    alt: "Presenting research" },
 
+    // Climate Resilient Development, University of Aalborg (3 photos)
+    aalborg1:  { src: "images/aalborg-1.jpg",     alt: "Climate resilient development at Aalborg" },
+    aalborg2:  { src: "images/aalborg-2.jpg",     alt: "Aalborg project work" },
+    aalborg3:  { src: "images/aalborg-3.jpg",     alt: "Aalborg team" },
+
     // Buraq: one tall (portrait) photo and one wide (landscape) photo
     buraqTall: { src: "images/buraq2.jpg",        alt: "Lecturing at the Buraq STEM camp" },
     buraqWide: { src: "images/buraq1.jpg",        alt: "Students at the Buraq STEM camp" }

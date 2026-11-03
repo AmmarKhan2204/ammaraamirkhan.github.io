@@ -104,30 +104,6 @@
     reveals.forEach(function (el, i) { el.querySelector("img").style.transitionDelay = (i % 3) * 90 + "ms"; ro.observe(el); });
   }
 
-  /* ---------- Count-up numbers ---------- */
-  var counters = document.querySelectorAll("[data-count]");
-  function runCount(el) {
-    var target = parseFloat(el.getAttribute("data-count"));
-    if (reduce) { el.textContent = target; return; }
-    var start = null, dur = 1300;
-    function step(t) {
-      if (start === null) start = t;
-      var k = clamp((t - start) / dur, 0, 1);
-      el.textContent = Math.round(target * (1 - Math.pow(1 - k, 3)));
-      if (k < 1) requestAnimationFrame(step);
-    }
-    el.textContent = "0";
-    requestAnimationFrame(step);
-  }
-  if ("IntersectionObserver" in window) {
-    var co = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { runCount(e.target); co.unobserve(e.target); }
-      });
-    }, { threshold: 0.6 });
-    counters.forEach(function (el) { co.observe(el); });
-  }
-
   /* ---------- Soft spotlight that follows the cursor on panels ---------- */
   if (!reduce) {
     document.querySelectorAll(".spot").forEach(function (p) {
