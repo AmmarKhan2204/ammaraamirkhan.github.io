@@ -223,13 +223,20 @@ ul { padding: 0; list-style: none; }
 .aalborg { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(24px, 4vw, 48px); align-items: center; }
 .aalborg__media { order: -1; }
 .mosaic { position: relative; aspect-ratio: 1 / 1.08; }
-.mosaic .shot { position: absolute; }
+.mosaic .shot { position: absolute; margin: 0; }
+.mosaic .shot img { height: auto; }
 .mosaic__a { left: 0; top: 0; width: 56%; border-radius: 26px 6px 26px 6px; }
 .mosaic__a img { aspect-ratio: 4 / 5; }
 .mosaic__b { right: 0; top: 4%; width: 38%; border-radius: 6px 22px 6px 22px; }
 .mosaic__b img { aspect-ratio: 3 / 4; }
 .mosaic__c { left: 22%; bottom: 0; width: 64%; border-radius: 22px 6px 22px 6px; border: 4px solid var(--iris-800); }
 .mosaic__c img { aspect-ratio: 4 / 3; }
+
+/* ---------- Green Innovation Network ---------- */
+.gin { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(24px, 4vw, 48px); align-items: center; }
+.gin__media { order: -1; position: relative; padding-bottom: 8px; }
+.gin__media .shot--tall { margin-left: auto; width: 68%; }
+.gin__media .shot--small { left: 0; right: auto; bottom: 0; width: 54%; }
 
 /* ---------- Buraq ---------- */
 .vol { margin-top: clamp(20px, 3vw, 32px); display: grid; gap: 26px; }
@@ -271,6 +278,8 @@ ul { padding: 0; list-style: none; }
   .buraq { grid-template-columns: 1fr; }
   .aalborg { grid-template-columns: 1fr; }
   .aalborg__media { order: 0; }
+  .gin { grid-template-columns: 1fr; }
+  .gin__media { order: 0; padding-bottom: 80px; }
   .buraq__media { min-height: 0; padding-bottom: 80px; }
 }
 @media (max-width: 760px) {

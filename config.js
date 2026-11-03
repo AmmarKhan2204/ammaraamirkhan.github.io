@@ -21,6 +21,10 @@ window.SITE = {
     aalborg2:  { src: "images/aalborg-2.jpg",     alt: "Stakeholder interviews in Aalborg" },
     aalborg3:  { src: "images/aalborg-3.jpg",     alt: "Client presentation at Aalborg University" },
 
+    // Green Innovation Network: gin1 is tall (portrait), gin2 is wide (landscape)
+    gin1:      { src: "images/gin-1.jpg",        alt: "Green Innovation Network event" },
+    gin2:      { src: "images/gin-2.jpg",        alt: "Green Innovation Network workshop" },
+
     // Buraq: one tall (portrait) photo and one wide (landscape) photo
     buraqTall: { src: "images/buraq2.jpg",        alt: "Lecturing at the Buraq STEM camp" },
     buraqWide: { src: "images/buraq1.jpg",        alt: "Students at the Buraq STEM camp" }
