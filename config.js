@@ -16,10 +16,10 @@ window.SITE = {
     stanford2: { src: "images/stanford-2.jpg",    alt: "Working with the research team" },
     stanford3: { src: "images/stanford-3.jpg",    alt: "Presenting research" },
 
-    // Climate Resilient Development, University of Aalborg (3 photos)
-    aalborg1:  { src: "images/aalborg-1.jpg",     alt: "Climate resilient development at Aalborg" },
-    aalborg2:  { src: "images/aalborg-2.jpg",     alt: "Aalborg project work" },
-    aalborg3:  { src: "images/aalborg-3.jpg",     alt: "Aalborg team" },
+    // Aalborg collage: aalborg1 is tall (portrait), aalborg2 is a smaller portrait, aalborg3 is wide (landscape)
+    aalborg1:  { src: "images/aalborg-1.jpg",     alt: "Port of Aalborg redevelopment project" },
+    aalborg2:  { src: "images/aalborg-2.jpg",     alt: "Stakeholder interviews in Aalborg" },
+    aalborg3:  { src: "images/aalborg-3.jpg",     alt: "Client presentation at Aalborg University" },
 
     // Buraq: one tall (portrait) photo and one wide (landscape) photo
     buraqTall: { src: "images/buraq2.jpg",        alt: "Lecturing at the Buraq STEM camp" },
@@ -31,8 +31,5 @@ window.SITE = {
     github:   "https://github.com/AmmarKhan2204",
     email:    "",   // e.g. "you@example.com"
     resume:   ""    // e.g. "resume.pdf" (put the file in the repo root)
-  },
-
-  // YouTube video ID shown under the Buraq section. Set to "" to hide it.
-  buraqVideoId: "3wzoA-VQiH4"
+  }
 };

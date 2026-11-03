@@ -43,19 +43,6 @@
     a.href = key === "email" ? "mailto:" + v : v;
   });
 
-  /* ---------- Optional Buraq video ---------- */
-  var vid = document.getElementById("buraq-video");
-  if (vid && cfg.buraqVideoId) {
-    var f = document.createElement("iframe");
-    f.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(cfg.buraqVideoId);
-    f.title = "Buraq Planetary Society STEM camp video";
-    f.loading = "lazy";
-    f.allow = "accelerometer; encrypted-media; gyroscope; picture-in-picture";
-    f.allowFullscreen = true;
-    vid.appendChild(f);
-    vid.hidden = false;
-  }
-
   var yr = document.getElementById("year");
   if (yr) yr.textContent = new Date().getFullYear();
 
