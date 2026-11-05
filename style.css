@@ -243,9 +243,9 @@ ul { padding: 0; list-style: none; }
 
 /* ---------- Green Innovation Network ---------- */
 .gin { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(24px, 4vw, 48px); align-items: center; }
-.gin__media { order: -1; position: relative; padding-bottom: 8px; }
-.gin__media .shot--tall { margin-left: auto; width: 68%; }
-.gin__media .shot--small { left: 0; right: auto; bottom: 0; width: 54%; }
+.gin__media { order: -1; position: relative; padding-bottom: 96px; }
+.gin__media .shot--tall { margin-left: auto; width: 74%; }
+.gin__media .shot--small { left: 0; right: auto; bottom: 0; width: 46%; }
 
 /* ---------- Buraq ---------- */
 .vol { margin-top: clamp(20px, 3vw, 32px); display: grid; gap: 26px; }
