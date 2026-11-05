@@ -10,11 +10,9 @@ window.SITE = {
   images: {
     profile:   { src: "images/profile.png",       alt: "Portrait of Ammar Aamir Khan" },
 
-    boston1:   { src: "images/boston-health-1.jpg", alt: "Clinical deployment in Houston" },
 
-    stanford1: { src: "images/stanford-1.jpg",    alt: "Stanford research project" },
-    stanford2: { src: "images/stanford-2.jpg",    alt: "Working with the research team" },
-    stanford3: { src: "images/stanford-3.jpg",    alt: "Presenting research" },
+    // ARVO poster presentation (Publications)
+    arvo1:     { src: "images/arvo-1.jpg",         alt: "Presenting the VisionGuard poster at ARVO" },
 
     // Aalborg collage: aalborg1 is tall (portrait), aalborg2 is a smaller portrait, aalborg3 is wide (landscape)
     aalborg1:  { src: "images/aalborg-1.jpg",     alt: "Port of Aalborg redevelopment project" },
