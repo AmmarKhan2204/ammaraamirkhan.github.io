@@ -178,6 +178,8 @@ ul { padding: 0; list-style: none; }
 
 .logo { width: 56px; height: 56px; flex: none; object-fit: contain; border-radius: 14px; background: #fff; padding: 6px; }
 .logo--lg { width: 72px; height: 72px; padding: 8px; }
+.logo--dark { background: #1b1615; padding: 0; }
+.logo--wide { padding: 5px; }
 .mark {
   flex: none; width: 56px; height: 56px; border-radius: 14px; display: grid; place-items: center;
   font-family: var(--serif); font-weight: 600; font-size: 19px; color: var(--iris-900);
