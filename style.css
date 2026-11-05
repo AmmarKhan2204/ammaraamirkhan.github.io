@@ -325,7 +325,7 @@ ul { padding: 0; list-style: none; }
   body::before { transform: none; }
 }
 
-.pub--feature { grid-template-columns: 1fr 1.25fr; gap: clamp(22px, 4vw, 44px); align-items: center; }
+.pub--feature { grid-template-columns: 1fr minmax(0, 400px); gap: clamp(22px, 4vw, 44px); align-items: center; }
 .pub__text { display: grid; gap: 10px; justify-items: start; }
 .pub__photo { margin: 0; overflow: hidden; border-radius: 22px 6px 22px 6px; background: var(--iris-800); box-shadow: 0 18px 40px -18px rgba(10, 4, 40, 0.7); }
 .pub__photo img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
