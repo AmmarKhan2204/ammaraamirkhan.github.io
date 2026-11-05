@@ -31,7 +31,7 @@ window.SITE = {
   links: {
     linkedin: "https://www.linkedin.com/in/ammar-aamir-khan-597a16257/",
     github:   "https://github.com/AmmarKhan2204",
-    email:    "",   // e.g. "you@example.com"
+    email:    "ammar.aamir@bostonhealth.ai",
     resume:   ""    // e.g. "resume.pdf" (put the file in the repo root)
   }
 };
