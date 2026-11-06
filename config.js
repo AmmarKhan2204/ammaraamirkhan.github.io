@@ -32,6 +32,6 @@ window.SITE = {
     linkedin: "https://www.linkedin.com/in/ammar-aamir-khan-597a16257/",
     github:   "https://github.com/AmmarKhan2204",
     email:    "ammar.aamir@bostonhealth.ai",
-    resume:   ""    // e.g. "resume.pdf" (put the file in the repo root)
+    resume:   "resume/Ammar_Khan_CV.pdf"
   }
 };
